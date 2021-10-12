@@ -31,5 +31,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
+      working-directory: electron-ui
     - run: npm run-script build --if-present
+      working-directory: electron-ui
     - run: npm test
+      working-directory: electron-ui
