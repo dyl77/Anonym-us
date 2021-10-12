@@ -2,7 +2,7 @@
 ## Privacy Bytes
 
 ### How to Start:
-To begin the app in an electron shell navigate to the electron-ui directory and run the command in terminal "npm run dev"
+To begin the app in an electron shell navigate to the electron-ui directory and run the command in terminal "npm start"
 
 #### Authors:
 * Craig Wyse: Team & Coding Lead 
