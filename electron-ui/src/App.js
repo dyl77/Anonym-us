@@ -1,5 +1,3 @@
-import logo from "./logo.svg";
-
 import Login from "./Pages/LoginPage";
 import Register from "./Pages/RegisterPage"
 
@@ -8,7 +6,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  // Link
 } from "react-router-dom";
 
 function App() {
@@ -32,12 +30,12 @@ function App() {
     );
 }
 
-function login() {
-  return <Login />;
-}
+// function login() {
+//   return <Login />;
+// }
 
-function register() {
-  return <Register />;
-}
+// function register() {
+//   return <Register />;
+// }
 
 export default App;
