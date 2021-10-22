@@ -10,8 +10,10 @@ import {
   // Link
 } from "react-router-dom";
 
+require('dotenv').config()
+
 function App() {
-  // return <Login />;
+
   return (
     <Router>
       <div>
@@ -32,7 +34,7 @@ function App() {
         </Switch>
       </div>
     </Router>
-    );
+  );
 }
 
 export default App;
