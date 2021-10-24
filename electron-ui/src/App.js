@@ -1,5 +1,6 @@
 import Login from "./Pages/LoginPage";
 import Register from "./Pages/RegisterPage"
+import Landing from "./Pages/LandingPage"
 
 import React from "react";
 import {
@@ -9,8 +10,10 @@ import {
   // Link
 } from "react-router-dom";
 
+require('dotenv').config()
+
 function App() {
-  // return <Login />;
+
   return (
     <Router>
       <div>
@@ -21,21 +24,17 @@ function App() {
           <Route path="/register">
             <Register />
           </Route>
+          <Route path="/landing">
+            <Landing />
+          </Route>
+          {/* Keep base route (/) at the bottom... Since routes render the first one that matches */}
           <Route path="/">
             <Login />
           </Route>
         </Switch>
       </div>
     </Router>
-    );
+  );
 }
-
-// function login() {
-//   return <Login />;
-// }
-
-// function register() {
-//   return <Register />;
-// }
 
 export default App;

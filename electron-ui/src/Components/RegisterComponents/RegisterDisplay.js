@@ -7,7 +7,8 @@ function RegisterDisplay () {
         <div class="register">
           <h1>Welcome to Anonym-us</h1>
           <h2>Register Below</h2>
-          <form method="post">
+          {/* <form method="post" action="/landing"> */}
+          <form action="/landing">
             <input
                 type="text"
                 name="fname"
@@ -32,7 +33,7 @@ function RegisterDisplay () {
               placeholder="Password"
               required="required"
             />
-            <button type="submit" class="btn btn-dark btn-block btn-large ">
+            <button type="submit" class="btn btn-dark btn-block btn-large " >
               Complete Registration
             </button>
           </form>
