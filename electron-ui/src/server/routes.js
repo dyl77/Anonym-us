@@ -29,6 +29,10 @@ app.post("/login", (req, res) => {
     })
 })
 
+app.post("/register", (req, res) => {
+  db.addUser(req.body.fname, req.body.lname, req.body.un, req.body.pw);
+});
+
 app.get("/express", (req, res) => {
   res.send({ express: "YOUR EXPRESS BACKEND IS CONNECTED TO REACT" });
 }); 

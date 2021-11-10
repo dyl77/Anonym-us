@@ -2,6 +2,11 @@ import { Yes, LoginDisplayContainer } from "../../Styles/LoginStyles";
 
 import React, { useEffect, useState } from "react";
 
+import {
+  useHistory
+} from "react-router-dom";
+
+
 const callBackendAPI = async () => {
   const response = await fetch("/getall");
   const body = await response.json();
@@ -15,6 +20,7 @@ const callBackendAPI = async () => {
 };
 
 function LoginDisplay() {
+  let history = useHistory();
   const login = async () => {
     let loginData = {
       un: userName,
@@ -33,7 +39,7 @@ function LoginDisplay() {
     if (login === false) {
       alert("No username or password found");
     } else if (login === true) {
-      alert("You are logged in");
+      history.push('/landing');
     }
   };
 
