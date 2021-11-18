@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Yes = styled.div`
-  background-color: lightgray;
+  background-color: #EDF7F6;
   height: 100vh;
   width: 100%;
 `;
