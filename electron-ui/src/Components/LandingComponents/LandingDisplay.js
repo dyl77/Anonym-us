@@ -15,6 +15,7 @@ function LandingDisplay() {
         </ul>
         <div class="login">
           <h1>Welcome to the landing page</h1>
+          <iframe src="https://mail.anonym-us.org/SOGo/" style={{width: '500px', height: '300px'}}/>
         </div>
       </LandingDisplayContainer>
     </Yes>
